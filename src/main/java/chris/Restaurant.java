@@ -1,4 +1,8 @@
-import java.time.LocalDateTime;
+package chris;
+
+import chris.Item;
+import chris.itemNotFoundException;
+
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -51,7 +55,7 @@ public class Restaurant {
         menu.remove(itemToBeRemoved);
     }
     public void displayDetails(){
-        System.out.println("Restaurant:"+ name + "\n"
+        System.out.println("chris.Restaurant:"+ name + "\n"
                 +"Location:"+ location + "\n"
                 +"Opening time:"+ openingTime +"\n"
                 +"Closing time:"+ closingTime +"\n"

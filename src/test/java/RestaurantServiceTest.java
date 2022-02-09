@@ -1,3 +1,6 @@
+import chris.Restaurant;
+import chris.RestaurantService;
+import chris.restaurantNotFoundException;
 import org.junit.jupiter.api.*;
 
 import java.time.LocalTime;
