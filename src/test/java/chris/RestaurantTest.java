@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 
 import java.time.LocalTime;
+import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
@@ -85,4 +86,12 @@ class RestaurantTest {
                 ()->regularRestaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    //<<<<<<<<<<<<<<<<<<<<"Part 3: Failing test case" >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    @Test
+    public void calculate_order_value_should_return_zero_on_empty_menu_list(){
+        ArrayList<String> itemNames = new ArrayList<>();
+        assertTrue(regularRestaurant.calculateOrderValue(itemNames) == 0);
+    }
+    //<<<<<<<<<<<<<<<<<<<<<"Part 3: Success test case" >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 }
