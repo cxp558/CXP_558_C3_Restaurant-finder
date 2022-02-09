@@ -93,5 +93,11 @@ class RestaurantTest {
         assertTrue(regularRestaurant.calculateOrderValue(itemNames) == 0);
     }
     //<<<<<<<<<<<<<<<<<<<<<"Part 3: Success test case" >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
+     @Test
+    public void calculate_order_value_should_return_correct_amount_on_nonempty_menu_list(){
+        ArrayList<String> itemNames = new ArrayList<>();
+        itemNames.add("Sweet corn soup");
+        itemNames.add("Vegetable lasagne");
+        assertTrue(regularRestaurant.calculateOrderValue(itemNames) == 388);
+    }
 }

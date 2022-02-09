@@ -76,4 +76,17 @@ public class Restaurant {
         return closingTime;
     }
 
+    //<<<<<<<<<<<<<<<<"Part 3: Solution">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    public int calculateOrderValue(List<String> itemNames){
+        int total = 0;
+        for (String orderItem : itemNames) {
+            for (Item item : menu) {
+                if(item.getName().equals(orderItem)){
+                    total += item.getPrice();
+                    break;
+                }
+            }
+        }
+        return total;
+    }
 }
