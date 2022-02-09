@@ -1,17 +1,18 @@
 package chris;
 
 public class Item {
-    private String name;
-    private int price;
+    private String name;// field that stores Item name, its private because we dont it access from another class
+    private int price;// field that stores the Item price
 
-    public Item(String name, int price) {
-        this.name = name;
-        this.price = price;
+    public Item(String name, int price) {// constructor is used to initialise the fields
+        this.name = name;// initialise the field "name" to the parameter value received
+        this.price = price;// initialise the field "price" to the parameter value received
     }
 
-    public String getName() {
+    public String getName() {// getter method that returns the name value
         return name;
     }
+
     @Override
     public String toString(){
         return  name + ":"
